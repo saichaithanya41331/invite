@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sai Chaithanya & Chandana Wedding Invitation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--accent:#7b3042;
+--ink:#253d35;
+--muted:#65716b;
+--line:#dde3df;
+--paper:#ffffff;
+--wash:#f3f6f4;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:var(--paper);color:var(--ink);line-height:1.8;}
+a{color:inherit;}
+section{padding:64px max(24px,calc((100% - 1040px)/2));}
+.hero{
+min-height: min(820px,92svh);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:48px 24px;
+color:#fff;
+background:linear-gradient(rgba(20,36,28,.65),rgba(20,36,28,.72)),url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=2000&q=85') center/cover;
+}
+.hero-content{width:100%;max-width:760px;}
+.logo{font-family:'Cinzel',serif;font-size:24px;color:#fff;line-height:1.4;margin-bottom:20px;}
+.save-date{font-family:'Cinzel',serif;font-size:15px;text-transform:uppercase;}
+.subtitle{font-size:13px;margin:16px 0 20px;color:#ebeee9;}
+.couple{font-weight:400;line-height:1.15;}
+.names{display:block;font-family:'Great Vibes',cursive;font-size:76px;}
+.amp{display:block;font-family:'Cinzel',serif;font-size:26px;margin:8px 0;color:#edc6ce;}
+.invite{max-width:550px;margin:24px auto;font-size:14px;}
+.hero-date{font-family:'Cinzel',serif;font-size:18px;}
+.hero-location{font-size:12px;margin-top:8px;}
+.hero .btn{background:#fff;color:var(--ink);border-color:#fff;margin-top:24px;}
+.heading{text-align:center;margin-bottom:32px;}
+.heading h2{font-size:28px;font-weight:500;font-family:'Cinzel',serif;color:var(--ink);line-height:1.4;}
+.heading p{font-size:13px;color:var(--muted);margin-top:10px;}
+.countdowns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;background:var(--wash);}
+.countdown{min-width:0;}
+.countdown .heading h2{font-size:20px;}
+.count-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;text-align:center;}
+.box{padding:12px 4px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);}
+.box span{display:block;font-family:'Cinzel',serif;font-size:32px;font-variant-numeric:tabular-nums;color:var(--accent);line-height:1.5;}
+.event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+.card{padding:36px 24px;background:var(--paper);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:4px;text-align:center;}
+.card h3{font-family:'Cinzel',serif;font-weight:600;font-size:21px;color:var(--accent);margin-bottom:20px;}
+.card p{font-size:14px;}
+.event-number{display:block;font-family:'Cinzel',serif;font-size:12px;color:var(--muted);margin-bottom:14px;}
+.schedule{background:var(--wash);}
+.timeline{max-width:760px;margin:auto;}
+.timeline-date{font-family:'Cinzel',serif;font-size:17px;color:var(--accent);padding:12px 0;}
+.timeline-date:not(:first-child){margin-top:24px;}
+.timeline-item{display:grid;grid-template-columns:130px minmax(0,1fr);gap:24px;padding:18px 0;border-top:1px solid var(--line);font-size:14px;align-items:baseline;}
+.timeline-item time{font-variant-numeric:tabular-nums;font-weight:500;}
+.venue{text-align:center;}
+.venue h3{font-family:'Cinzel',serif;font-size:24px;font-weight:500;margin-bottom:8px;}
+.venue p{font-size:14px;color:var(--muted);}
+.venue-mark{width:48px;height:48px;display:grid;place-items:center;margin:0 auto 20px;color:var(--accent);border:1px solid var(--line);border-radius:50%;}
+.actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:24px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 24px;background:var(--accent);color:#fff;text-decoration:none;border:1px solid var(--accent);border-radius:4px;font-size:13px;font-weight:500;transition:background .2s,transform .2s;}
+.btn svg{width:18px;height:18px;flex-shrink:0;}
+.btn:hover{background:#5f2030;color:#fff;transform:translateY(-2px);}
+.btn.secondary{background:transparent;color:var(--ink);border-color:#abb9b1;}
+.btn.secondary:hover{background:#e6ede8;}
+a:focus-visible{outline:3px solid #b68b27;outline-offset:5px;}
+.contact{text-align:center;background:var(--wash);}
+.phone{font-size:24px;font-weight:500;text-decoration:none;display:inline-block;}
+.contact .heading{margin-bottom:20px;}
+.blessing{text-align:center;}
+.blessing p{font-size:15px;color:var(--muted);}
+footer{background:var(--ink);color:#e7ede9;text-align:center;padding:40px 24px;font-size:12px;}
+footer h2{font-family:'Great Vibes',cursive;font-size:32px;font-weight:400;color:#edc6ce;}
+footer p{margin-top:8px;}
+@media(max-width:640px){
+section{padding:44px 20px;}
+.hero{min-height:0;padding:40px 20px 48px;}
+.names{font-size:54px;}
+.hero-date{font-size:16px;}
+.invite{font-size:13px;max-width:340px;}
+.countdowns,.event-grid{grid-template-columns:minmax(0,1fr);gap:32px;}
+.heading h2{font-size:23px;}
+.countdown .heading{margin-bottom:20px;}
+.card{padding:28px 20px;}
+.timeline-item{grid-template-columns:95px minmax(0,1fr);gap:12px;font-size:13px;}
+.venue h3{font-size:21px;}
+.phone{font-size:22px;}
+}
+@media(max-width:360px){.names{font-size:46px;}.btn{padding:12px 16px;}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}.btn{transition:none;}}
+</style>
+</head>
+
+<body>
+
+<main>
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="logo" aria-label="Sai Chaithanya and Chandana">SC & C</div>
+
+<div class="save-date">Save The Date</div>
+
+<div class="subtitle">for the wedding of</div>
+
+<h1 class="couple"><span class="names">
+Sai Chaithanya
+</span>
+
+<span class="amp">&</span>
+
+<span class="names">
+Chandana
+</span></h1>
+
+<div class="invite">
+We cordially invite you to join us as we begin a new chapter of our lives together and celebrate our wedding.
+</div>
+
+<p class="hero-date">21 & 22 November 2026</p>
+<p class="hero-location">Sri Shiridi Sai Garden's · Dharmavaram</p>
+<a class="btn" href="#events"><i data-lucide="calendar-days" aria-hidden="true"></i>View Celebrations</a>
+</div>
+
+</section>
+
+<section class="countdowns" aria-label="Celebration countdowns">
+<div class="countdown">
+
+<div class="heading">
+<h2>Reception Countdown</h2>
+<p>21 November 2026 · 7:00 PM IST</p>
+</div>
+
+<div class="count-row">
+<div class="box"><span id="rDays">0</span>Days</div>
+<div class="box"><span id="rHours">0</span>Hours</div>
+<div class="box"><span id="rMinutes">0</span>Minutes</div>
+<div class="box"><span id="rSeconds">0</span>Seconds</div>
+</div>
+
+</div>
+<div class="countdown">
+
+<div class="heading">
+<h2>Wedding Countdown</h2>
+<p>22 November 2026 · 9:00 AM IST</p>
+</div>
+
+<div class="count-row">
+<div class="box"><span id="wDays">0</span>Days</div>
+<div class="box"><span id="wHours">0</span>Hours</div>
+<div class="box"><span id="wMinutes">0</span>Minutes</div>
+<div class="box"><span id="wSeconds">0</span>Seconds</div>
+</div>
+
+</div>
+</section>
+
+<section class="events" id="events">
+
+<div class="heading">
+<h2>Event Details</h2>
+<p>Two celebrations. One beautiful beginning.</p>
+</div>
+
+<div class="event-grid">
+
+<div class="card">
+<span class="event-number">01 / THE EVENING</span>
+<h3>Reception</h3>
+
+<p><strong>Date:</strong> 21 November 2026</p>
+<p><strong>Time:</strong> 7:00 PM</p>
+<p><strong>Dinner:</strong> 8:00 PM</p>
+
+<br>
+
+<p>Sri Shiridi Sai Garden's</p>
+<p>(Function Hall)</p>
+<p>Bangalore Road, Dharmavaram</p>
+
+</div>
+
+<div class="card">
+
+<span class="event-number">02 / THE CEREMONY</span>
+<h3>Wedding Ceremony</h3>
+
+<p><strong>Date:</strong> 22 November 2026</p>
+<p><strong>Time:</strong> 9:00 AM - 10:00 AM</p>
+
+<br>
+
+<p>Sri Shiridi Sai Garden's</p>
+<p>(Function Hall)</p>
+<p>Bangalore Road, Dharmavaram</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="schedule">
+
+<div class="heading">
+<h2>Wedding Schedule</h2>
+</div>
+
+<div class="timeline">
+
+<h3 class="timeline-date">Saturday, 21 November</h3>
+<div class="timeline-item">
+<time datetime="2026-11-21T19:00:00+05:30">7:00 PM</time><span>Reception Ceremony</span>
+</div>
+
+<div class="timeline-item">
+<time datetime="2026-11-21T20:00:00+05:30">8:00 PM</time><span>Dinner</span>
+</div>
+
+<h3 class="timeline-date">Sunday, 22 November</h3>
+<div class="timeline-item">
+<time datetime="2026-11-22T08:45:00+05:30">8:45 AM</time><span>Tiffin & Refreshments</span>
+</div>
+
+<div class="timeline-item">
+<time datetime="2026-11-22T09:00:00+05:30">9:00 AM</time><span>Wedding Ceremony Begins</span>
+</div>
+
+<div class="timeline-item">
+<time datetime="2026-11-22T10:00:00+05:30">10:00 AM</time><span>Muhurtham Completion</span>
+</div>
+
+<div class="timeline-item">
+<time datetime="2026-11-22T12:00:00+05:30">12:00 PM</time><span>Lunch</span>
+</div>
+
+</div>
+
+</section>
+
+<section class="venue" id="venue">
+
+<div class="heading">
+<h2>Venue</h2>
+</div>
+
+<div class="venue-mark"><i data-lucide="map-pin" aria-hidden="true"></i></div>
+<h3>Sri Shiridi Sai Garden's</h3>
+
+<p>(Function Hall)</p>
+
+<p>Bangalore Road, Dharmavaram</p>
+
+<div class="actions">
+<a class="btn" href="https://maps.app.goo.gl/TMHDHo5Bqytai5dp7" target="_blank" rel="noopener noreferrer"><i data-lucide="navigation" aria-hidden="true"></i>Get Directions</a>
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="heading">
+<h2>Contact & RSVP</h2>
+</div>
+
+<a class="phone" href="tel:+916281462446" aria-label="Call +91 6281462446">+91 62814 62446</a>
+<div class="actions">
+<a class="btn" href="tel:+916281462446"><i data-lucide="phone" aria-hidden="true"></i>Call Now</a>
+<a class="btn secondary" href="https://wa.me/916281462446?text=Hello%2C%20I%20would%20like%20to%20RSVP%20for%20Sai%20Chaithanya%20and%20Chandana%27s%20wedding." target="_blank" rel="noopener noreferrer"><i data-lucide="message-circle" aria-hidden="true"></i>RSVP on WhatsApp</a>
+</div>
+
+</section>
+
+<section class="blessing">
+
+<div class="heading">
+<h2>Your Presence Is Our Blessing</h2>
+</div>
+
+<p>
+Your gracious presence and blessings are warmly invited.
+</p>
+
+</section>
+
+</main>
+<footer>
+
+<h2>With Love</h2>
+<p>Sai Chaithanya & Chandana</p>
+<p>21 & 22 November 2026 · Dharmavaram</p>
+
+</footer>
+
+<script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+<script>
+
+if (window.lucide) lucide.createIcons();
+
+const receptionDate =
+new Date("2026-11-21T19:00:00+05:30").getTime();
+
+const weddingDate =
+new Date("2026-11-22T09:00:00+05:30").getTime();
+
+function update(target,prefix){
+
+const now=new Date().getTime();
+let distance=target-now;
+
+if(distance<0){
+distance=0;
+}
+
+const days=Math.floor(distance/(1000*60*60*24));
+const hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+const minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+const seconds=Math.floor((distance%(1000*60))/1000);
+
+document.getElementById(prefix+'Days').textContent=days;
+document.getElementById(prefix+'Hours').textContent=String(hours).padStart(2,'0');
+document.getElementById(prefix+'Minutes').textContent=String(minutes).padStart(2,'0');
+document.getElementById(prefix+'Seconds').textContent=String(seconds).padStart(2,'0');
+
+}
+
+update(receptionDate,'r');
+update(weddingDate,'w');
+setInterval(function(){
+
+update(receptionDate,'r');
+update(weddingDate,'w');
+
+},1000);
+
+</script>
+
+</body>
+</html>
